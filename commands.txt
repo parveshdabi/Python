@@ -1,0 +1,75 @@
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> X= "Hello World ! I am "  
+print(X)
+print(X+ 'Python')      
+
+
+
+print(type(2)) 
+print(type("Hello")) 
+print(type(None)) 
+
+print(type(int)) 
+print(type(type(int)))
+
+#Python has two numeric types int and float
+print(3) 
+print(3.0) 
+print(1 + 1) 
+print(8 - 1) 
+print(10 * 2 )
+print(9 / 3) 
+print(5 / 2) 
+print(7 / 1.4) 
+
+print(7 // 3)
+print(7 % 3) 
+print(2 ** 4 )
+
+
+
+#bool is a subtype of int, where True == 1 and False == 0
+
+print(True) 
+print(False) 
+print(not True)
+print(True and False) 
+print(True or False )
+
+print(1== 1 )# => True
+print(2 * 3) == 5 # => False
+print(1 != 1) # => False
+print(2 * 3 != 5) # => True
+
+print(1 < 10) # => True
+print(2 >= 0 )# => True
+print(1 < 2 < 3) # => True (1 < 2 and 2 < 3)
+print(1 < 2 >= 3) # => False (1 < 2 and 2 >= 3)
+
+#No char in Python! Both ' and " create string literals
+
+
+greeting = 'Hello'
+print(greeting)
+group = "wørld" # Unicode by default
+print(group)
+
+print(greeting + ' ' + group + '!') # => 'Hello wørld!'
+
+
+#Indexing in Python starts from Zero 0
+
+s='ILOVEPYTHON'
+print(s[0] ) 
+print(s[1])  
+print(s[4]) 
+print(s[6])  
+#print(s[11]) 
+
+#Negative Indexing starts from -1
+print(s[-1]) 
+print(s[-2]) 
+print(s[-4]) 
+print(s[-6])
+

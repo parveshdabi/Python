@@ -1,0 +1,67 @@
+#Slicing
+print(s[0:2]) 
+print(s[3:6]) 
+print(s[1:4]) 
+
+#Slicing Witout START AND STOP
+print(s[:2]) 
+print(s[3:]) 
+
+#Slicing with STEP SIZE
+print(s[1:5:2]) #== LV  #Can also pass a step size
+print(s[4::-2]) #== EOI #Can also pass a negative step size
+
+
+#Reversing a String
+
+print(s[::-1]) #==NOHTYPEVOLI
+
+
+
+
+#Converting Values  #Like Storing Mobile Number as string
+
+print(str(55)) # => "42"
+print(int("55")) # => 55
+print(float("4.5")) # => 4.5
+
+
+''' List is a Python Data Structure, mutable ,hetrogeneous  and can be nested as well '''
+
+Number =[] #Empty list
+print(Number)
+Number = [1,2,3]  # List is decalred using squere brackets #Commas separate elements  # Create a new list
+print(Number)
+
+
+
+mixed_list = [10, 9, "Minutes"] 
+print(mixed_list)
+
+#Append elements to the end of a list
+mixed_list.append(10)
+print(mixed_list)
+mixed_list.append(115)
+print(mixed_list)
+
+
+# Access elements at a particular index
+print(mixed_list[0]) 
+print(mixed_list[-1]) 
+
+
+# You can also slice lists - the same rules apply
+
+print(mixed_list[:3]) 
+print(mixed_list[1:-1]) 
+
+#Nested Lists
+Nested_List= [Number,mixed_list]
+print(Nested_List)
+
+#Slicing Nested List
+print(Nested_List[0])
+
+print(Nested_List[0][1])
+
+print(Nested_List[1][2:])
