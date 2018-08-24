@@ -1,0 +1,21 @@
+#concatenate
+FirstName = 'Parvesh'
+print(FirstName)
+MiddleName = "Kumar" 
+print(MiddleName)
+LastName = 'Dabi'
+print(LastName)
+a=(FirstName + ' ' + MiddleName + ' ' + LastName + ' ') 
+print(a)
+#Reverse
+reverse_word= a[::-1]
+print(reverse_word)
+
+#slice
+print(a[3:])
+
+#slice opposite
+print(a[:-3])
+
+#inbuilt function
+print(len(a))
