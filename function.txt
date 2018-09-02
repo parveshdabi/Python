@@ -1,0 +1,160 @@
+'''
+#Multiple Return:
+
+def multiple_return(x):
+    return x*1,x*2,x*3
+
+A,B,C=multiple_return(3)
+print(A)
+print(B)
+print(C)
+
+
+#No return value and argument:
+def cube():
+    val=4*4*4
+    print(val)
+cube()
+
+#With argument and return value:
+
+def cube(x):
+    """Return the cube of the a number"""
+    return x*x*x
+A=cube(4)
+print(A)
+
+def add(x,y):
+    """Return the addition of the values"""
+    return x+y
+Result=add(2,3)
+print(Result)
+
+#Tupple return:
+
+def raise_both(value1, value2):
+    new_value1=value1**value2
+    new_value2=value2**value1
+    new_tupple=(new_value1,new_value2)
+    return new_tupple
+result=raise_both(2,3)
+print(result)
+
+
+def sub(x):
+    val=4-2
+print(val)
+
+
+new val=10
+def square(value):
+    new_val2=new_val**2
+    return new_val2
+print(square(3))
+new_val=20
+print(square(3))
+
+
+#Use of 'global' keyword:
+
+new_val=10
+def square(value):
+    global new_val
+    new_val=new_val**2
+    return new_val
+print(square(3))
+
+print(new_val)
+
+
+#Nested function 1:
+
+def add(x):
+    def sub(y):
+        return y-3
+    return(sub(5))
+print(add(3))
+
+
+
+def mod2plus5(x1,x2,x3):
+    def inner(x1):
+        return x%2+5
+    return(inner(x1),inner(x2),inner(x3))
+print(outer(1,2,3))
+
+#Nested function 2:
+
+def raise_val(n):
+    def inner(x):
+        raised=x**n
+        return raised
+    return inner
+square=raise_val(2)
+cube=raise_val(3)
+print(square(2),cube(4))    
+
+#Nested Function 3:
+
+def outer():
+    n=1
+    def inner():
+        nonlocal n
+        n=2
+        print(n)
+    inner()
+    print(n)
+outer()
+'''
+#Default  argument
+
+def power(number,pow=1):
+    new_value=number**pow
+    return new_value
+print(power(9,2))
+print(power(9,1))
+print(power(9))
+
+
+
+
+##parvesh
+def cube():
+    new_value=4*4*4
+    print(new_value)
+
+cube()
+    
+def cube():
+    new_value=4*4*4
+    print(new_value)
+
+cube()
+def raise_both(value1,value2):
+    new_value1 =value1**value2
+    new_value2 =value2**value1
+    new_tuple= (new_value1,new_value2)
+    return new_tuple
+print(raise_both)
+result= raise_both(2,3)
+print(result)
+
+
+##global vs local
+new_val=10
+def square(value):
+    new_value2=new_val**2
+    return new_value2
+print(square(3))
+new_val=20
+print(square(3))
+
+
+
+
+
+
+
+
+
+
